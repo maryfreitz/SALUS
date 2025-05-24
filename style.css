@@ -1,0 +1,88 @@
+@font-face {
+    font-family:"InstrumentSansRegular" ;
+    src: url(fontes/InstrumentSans-Regular.ttf);
+    }
+
+body {
+    display: flex;
+    justify-content: end;
+    background-color: #D4F0F9;
+    font-family: "InstrumentSansRegular";
+}
+
+#input{
+    margin-bottom: 5vh
+}
+
+#caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85B7CC;
+    height: 220px;
+    width: 150px;
+    padding: 100px;
+    border-radius: 10px;
+    margin-right: 60vh;
+    margin-top: 20vh;
+
+}
+
+.campo{
+    display: block;
+    text-align: start;
+    border: none;
+    border-radius: 3px;
+    background-color: aliceblue;
+    height: 25px;
+    width: 250px;
+    padding: 10px;
+}
+
+h4 {
+    font-size: large;
+    height: 5px;
+    color: #012A4A;
+}
+
+#botao{
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    background-color: aliceblue;
+    margin-top: 5vh;
+    margin-left: 75px;
+    font-size: large;
+    color: #033a65;
+    box-shadow: 0px 0px 10px #2A6F97;
+}
+
+
+#botao:hover{
+    background-color: #d7f3ff;
+}
+
+#logo{
+    margin-top: 30vh;
+    margin-right: 10vh;
+    width: 300px;
+    height: 300px;
+}
+
+#botaocadastro{
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    background-color: #012A4A;
+    margin-top: 5vh;
+    margin-left: 75px;
+    font-size: large;
+    color: aliceblue;
+    box-shadow: 0px 0px 10px #013A63;
+}
+
+#botaocadastro:hover{
+    background-color: #004867;
+}
