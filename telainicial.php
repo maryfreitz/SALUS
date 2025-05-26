@@ -1,3 +1,6 @@
+<?php 
+    include("seguranca.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
