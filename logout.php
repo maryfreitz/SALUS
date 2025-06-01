@@ -5,5 +5,5 @@
 
     session_destroy();
 
-    header("Location: ../Login/index.html");
+    header("Location: ../codigoSalus/index.html");
 ?>
