@@ -1,6 +1,5 @@
 <?php
     include('conex.php'); 
-
     if (isset($_POST['email']) && isset($_POST['senha'])) {
         $email = $_POST['email'];
         $senha = $_POST['senha'];
@@ -20,10 +19,10 @@
             $_SESSION['id_agente'] = $agente['id_agente'];
             $_SESSION['email_agente'] = $agente['email_agente'];
 
-            header("Location: telainicial.html");
+            header("Location: telainicial.php");
             exit;
         } else {
-            header("Location: erro.html");
+            header("Location: erro.php");
         }
     }
 ?>
