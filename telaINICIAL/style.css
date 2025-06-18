@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #D4F0F9;
+    height: 100vh;
+}
+
+.menu-lateral {
+    width: 300px;
+    background-color: #90C6DD;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+}
+
+.perfil {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icone-perfil {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+}
+
+.imagem-perfil {
+    width: 70px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #85B7CC;
+}
+
+.nome-agente {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.sessao {
+    margin-bottom: 30px;
+}
+
+.titulo-sessao {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#botao {
+    display: block;
+    width: 100%;
+    background-color: #85B7CC;
+    border: none;
+    padding: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #012A4A;
+}
+
+#botao:hover{
+    color: #234a5d;
+
+}
+
+
+
+#Ultimo-botao{
+    display: block;
+    width: 100%;
+    background-color: #85B7CC;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #012A4A;
+}
+
+#Ultimo-botao:hover{
+    color: #234a5d;
+}
+
+
+.divisor {
+    border: 1px solid #D4F0F9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.conteudo-principal{
+    flex: 1;
+}
+
+.menu-superior {
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    align-items: center;
+    background-color: #67A3BD;
+    padding: 10px 100px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.menu-superior a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home{
+    color: #013A63;
+}
+
+
+.imagem-logo {
+    height: 70px;
+
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 100px 100px 0 100px; 
+
+}
+
+
+.cartao {
+    background-color: #85B7CC;
+    padding: 50px;
+    border-radius: 10px;
+    color: #001f3f;
+}
+
+.valor{
+    font-size: 40px;
+}
+
+

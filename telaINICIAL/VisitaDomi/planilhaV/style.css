@@ -1,0 +1,66 @@
+
+#fundo-pagina {
+	background-color: #d6f0fa;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+
+
+#cabecalho {
+	text-align: right;
+	padding: 10px;
+}
+
+#logo-salus {
+	width: 120px;
+}
+
+
+#tabela-visitas {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+#tabela-visitas thead th {
+	background-color: #247ba0;
+	color: white;
+	padding: 10px;
+	text-align: left;
+	border: 1px solid #ddd;
+}
+
+
+#tabela-visitas tbody td {
+	padding: 8px;
+	border: 1px solid #ccc;
+	text-align: left;
+}
+
+
+.coluna-acoes {
+	text-align: center;
+}
+
+
+.botao-excluir, .botao-editar {
+	background-color: #4aa5c8;
+	color: white;
+	border: none;
+	padding: 6px 10px;
+	margin: 2px;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 5px;
+}
+
+.botao-excluir:hover {
+	background-color: #e74c3c;
+}
+
+.botao-editar:hover {
+	background-color: #f39c12;
+}
