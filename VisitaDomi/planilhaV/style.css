@@ -72,3 +72,23 @@ h2 {
 .botao-editar:hover {
 	background-color: #f39c12;
 }
+
+#botao-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #85B7CC;
+    color: #001f3f;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#botao-voltar:hover {
+    background-color: #67A3BD;
+    color: white;
+}
+
