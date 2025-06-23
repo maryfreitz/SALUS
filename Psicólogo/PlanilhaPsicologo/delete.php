@@ -2,10 +2,11 @@
 
     require "../conexao.php";
 
-    $cartao = $_POST["cartaoSUS"] ?? '';
-    if ($cartao) {
-        $stmt = $conexao->prepare("DELETE FROM medicamento_psicologo WHERE cartaoSUS = :cartao");
-        $stmt->bindValue(":cartao", $cartao);
+    $id = $_POST["id"] ?? '';
+
+    if (!empty($id)) {
+        $stmt = $conexao->prepare("DELETE FROM medicamento_psicologo WHERE id = :id");
+        $stmt->bindValue(":id", $id);
     
         if ($stmt->execute()) {
             header("Location: ../PlanilhaPsicologo");
