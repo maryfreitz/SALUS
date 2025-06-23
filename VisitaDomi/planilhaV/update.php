@@ -1,7 +1,7 @@
     <?php
         include "conexao.php";
-
-        $id = $_POST["idVisitado"] ?? '';
+        
+        $id = $_POST["id_domicilio"] ?? '';
         $nome = $_POST["nomeVisitado"] ?? '';
         $idade = $_POST["idadeVisitado"] ?? '';
         $entregas = $_POST["entregas"] ?? '';
@@ -10,8 +10,8 @@
         $motivo = $_POST["motivoVisita"] ?? '';
 
 
-        if ($id && $nome && $idade && $entregas && $data && $agenteRes && $motivo) {
-            $stmt = $conexao->prepare("UPDATE visita_domiciliar SET id_domicilio = :id, nome = :nome, idade = :idade, motivo_visita = :motivo, entregas = :entregas, datas = :datas, agente = :agente WHERE agente = :agente");
+        if ($nome && $idade && $entregas && $data && $agenteRes && $motivo) {
+            $stmt = $conexao->prepare("UPDATE visita_domiciliar SET nome = :nome, idade = :idade, motivo_visita = :motivo, entregas = :entregas, datas = :datas, agente = :agente WHERE id_domicilio = :id");
         
             $stmt->bindValue(":id", $id);
             $stmt->bindValue(":nome", $nome);
