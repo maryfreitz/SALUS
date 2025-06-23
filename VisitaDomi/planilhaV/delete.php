@@ -2,7 +2,7 @@
 
     require "conexao.php";
 
-    $id = $_POST["idVisitado"] ?? "";
+    $id = $_POST["id_domicilio"] ?? "";
     if ($id) {
         $stmt = $conexao->prepare("DELETE FROM visita_domiciliar WHERE id_domicilio = :id");
         $stmt->bindValue(":id", $id);
