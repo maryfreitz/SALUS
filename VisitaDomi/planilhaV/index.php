@@ -8,6 +8,8 @@
 </head>
 <body id="fundo-pagina">
 
+    <a href="../../" id="botao-voltar">← Voltar</a>
+
     <div id="cabecalho">
         <img id="logo" src="logo/ChatGPT_Image_15_de_mai._de_2025__10_39_50-removebg-preview (1)">
     </div>
@@ -46,12 +48,15 @@
                     <td><?php echo $rows->agente; ?></td>
 
                     <td class="coluna-acoes">
-                        <a href="update.php" class="botao-editar" >✏️</a>
+                        <form action="formEDIT.php" method="post">
+                        <input type="hidden" name="id_domicilio" value="<?php echo $rows->id_domicilio;?>">
+                        <button type="submit" class="botao-editar">✏️</button>
+                        </form>
 
-                        <form action="delete.php" method="post" style="display:inline;">
-                        <input type="hidden" name="idVisitado" value="<?php echo $rows->id_domicilio; ?>">
+                        <form action="delete.php" method="post">
+                        <input type="hidden" name="id_domicilio" value="<?php echo $rows->id_domicilio; ?>">
                         <button type="submit" class="botao-excluir">🗑️</button>
-                        
+
                         </form>
                     </td>
                 </tr>
