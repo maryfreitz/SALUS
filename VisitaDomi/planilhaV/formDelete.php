@@ -12,23 +12,21 @@
 		<div id="formulario">
 			<form action="delete.php" method="POST">
 				<div class="coluna-esquerda">
-				<label for="nome-visitado">Id do Visitado:</label>
-				<input type="text" id="id-visitado" name="idVisitado" class="campo-texto"<?php echo $_POST["idVisitado"]?? ''?>required>
 
 				<label for="nome-visitado">Nome do Visitado:</label>
-				<input type="text" id="nome-visitado" name="nomeVisitado" class="campo-texto"<?php echo $_POST["nomeVisitado"]?? ''?>required>
+				<input type="text" id="nome-visitado" name="nomeVisitado" class="campo-texto"required>
 
 				<label for="idade-visitado">Idade do Visitado:</label>
-				<input type="text" id="idade-visitado" name="idadeVisitado" class="campo-texto"<?php echo $_POST["idadeVisitado"]?? ''?>required>
+				<input type="text" id="idade-visitado" name="idadeVisitado" class="campo-texto"required>
 
 				<label for="entregas">Entregas feitas ao Visitado:</label>
-				<input type="text" id="entregas" name="entregas" class="campo-texto"<?php echo $_POST["entregas"]?? ''?>required>
+				<input type="text" id="entregas" name="entregas" class="campo-terequired>
 
 				<label for="data-visita">Data da Visita:</label>
-				<input type="date" id="data-visita" name="data" class="campo-texto"<?php echo $_POST["data"]?? ''?>required>
+				<input type="date" id="data-visita" name="data" class="camprequired>
 
 				<label for="agente">Agente Responsável:</label>
-				<input type="text" id="agente" name="agenteRespon" class="campo-texto"<?php echo $_POST["agenteRespon"]?? ''?>required>
+				<input type="text" id="agente" name="agenteRespon" class="campo-texto"required>
 			</div>
 
 			<div class="coluna-direita">
